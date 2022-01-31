@@ -28,59 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.open_file_button = new System.Windows.Forms.Button();
-            this.number_of_gaps = new System.Windows.Forms.Label();
-            this.save_file_button = new System.Windows.Forms.Button();
+            this.numberOfGapsText = new System.Windows.Forms.Label();
+            this.curEditGapPositionInListText = new System.Windows.Forms.Label();
+            this.curEditGapScoreText = new System.Windows.Forms.Label();
+            this.curEditGapNameText = new System.Windows.Forms.Label();
+            this.openAndReadFileButton = new System.Windows.Forms.Button();
+            this.saveFileButton = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.gap = new System.Windows.Forms.ListBox();
-            this.gap_pos_value = new System.Windows.Forms.NumericUpDown();
-            this.label_gap_pos = new System.Windows.Forms.Label();
-            this.label_gap_score = new System.Windows.Forms.Label();
-            this.gap_sv = new System.Windows.Forms.NumericUpDown();
-            this.label_gap_name = new System.Windows.Forms.Label();
-            this.gap_name = new System.Windows.Forms.TextBox();
-            this.update_gap = new System.Windows.Forms.Button();
-            this.remove_gap = new System.Windows.Forms.Button();
-            this.add_gap = new System.Windows.Forms.Button();
-            this.clear_all = new System.Windows.Forms.Button();
-            this.export_to_text = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.gap_pos_value)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gap_sv)).BeginInit();
+            this.curEditGapPositionInListValueText = new System.Windows.Forms.NumericUpDown();
+            this.curEditGapScoreValueText = new System.Windows.Forms.NumericUpDown();
+            this.curEditGapNameValueText = new System.Windows.Forms.TextBox();
+            this.updateGapButton = new System.Windows.Forms.Button();
+            this.removeGapButton = new System.Windows.Forms.Button();
+            this.addGapButton = new System.Windows.Forms.Button();
+            this.clearAllGapsButton = new System.Windows.Forms.Button();
+            this.exportListToTextFileButton = new System.Windows.Forms.Button();
+            this.creatorText = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.curEditGapPositionInListValueText)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.curEditGapScoreValueText)).BeginInit();
             this.SuspendLayout();
             // 
-            // open_file_button
+            // numberOfGapsText
             // 
-            this.open_file_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.open_file_button.Location = new System.Drawing.Point(12, 12);
-            this.open_file_button.Name = "open_file_button";
-            this.open_file_button.Size = new System.Drawing.Size(185, 34);
-            this.open_file_button.TabIndex = 0;
-            this.open_file_button.Text = "Open and Read File";
-            this.open_file_button.UseVisualStyleBackColor = true;
-            this.open_file_button.Click += new System.EventHandler(this.button1_Click);
+            this.numberOfGapsText.AutoSize = true;
+            this.numberOfGapsText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfGapsText.Location = new System.Drawing.Point(46, 49);
+            this.numberOfGapsText.Name = "numberOfGapsText";
+            this.numberOfGapsText.Size = new System.Drawing.Size(121, 16);
+            this.numberOfGapsText.TabIndex = 1;
+            this.numberOfGapsText.Text = "Number Of Gaps: 0";
             // 
-            // number_of_gaps
+            // curEditGapPositionInListText
             // 
-            this.number_of_gaps.AutoSize = true;
-            this.number_of_gaps.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number_of_gaps.Location = new System.Drawing.Point(46, 49);
-            this.number_of_gaps.Name = "number_of_gaps";
-            this.number_of_gaps.Size = new System.Drawing.Size(121, 16);
-            this.number_of_gaps.TabIndex = 1;
-            this.number_of_gaps.Text = "Number Of Gaps: 0";
-            this.number_of_gaps.Click += new System.EventHandler(this.label1_Click);
+            this.curEditGapPositionInListText.AutoSize = true;
+            this.curEditGapPositionInListText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.curEditGapPositionInListText.Location = new System.Drawing.Point(46, 82);
+            this.curEditGapPositionInListText.Name = "curEditGapPositionInListText";
+            this.curEditGapPositionInListText.Size = new System.Drawing.Size(121, 16);
+            this.curEditGapPositionInListText.TabIndex = 9;
+            this.curEditGapPositionInListText.Text = "Gap Position In List";
             // 
-            // save_file_button
+            // curEditGapScoreText
             // 
-            this.save_file_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.save_file_button.Location = new System.Drawing.Point(12, 463);
-            this.save_file_button.Name = "save_file_button";
-            this.save_file_button.Size = new System.Drawing.Size(185, 34);
-            this.save_file_button.TabIndex = 6;
-            this.save_file_button.Text = "Save File";
-            this.save_file_button.UseVisualStyleBackColor = true;
-            this.save_file_button.Click += new System.EventHandler(this.save_file_button_Click);
+            this.curEditGapScoreText.AutoSize = true;
+            this.curEditGapScoreText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.curEditGapScoreText.Location = new System.Drawing.Point(46, 137);
+            this.curEditGapScoreText.Name = "curEditGapScoreText";
+            this.curEditGapScoreText.Size = new System.Drawing.Size(76, 16);
+            this.curEditGapScoreText.TabIndex = 10;
+            this.curEditGapScoreText.Text = "Gap Score ";
+            // 
+            // curEditGapNameText
+            // 
+            this.curEditGapNameText.AutoSize = true;
+            this.curEditGapNameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.curEditGapNameText.Location = new System.Drawing.Point(46, 191);
+            this.curEditGapNameText.Name = "curEditGapNameText";
+            this.curEditGapNameText.Size = new System.Drawing.Size(74, 16);
+            this.curEditGapNameText.TabIndex = 12;
+            this.curEditGapNameText.Text = "Gap Name";
+            // 
+            // openAndReadFileButton
+            // 
+            this.openAndReadFileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openAndReadFileButton.Location = new System.Drawing.Point(12, 12);
+            this.openAndReadFileButton.Name = "openAndReadFileButton";
+            this.openAndReadFileButton.Size = new System.Drawing.Size(185, 34);
+            this.openAndReadFileButton.TabIndex = 0;
+            this.openAndReadFileButton.Text = "Open and Read File";
+            this.openAndReadFileButton.UseVisualStyleBackColor = true;
+            this.openAndReadFileButton.Click += new System.EventHandler(this.openAndReadFile);
+            // 
+            // saveFileButton
+            // 
+            this.saveFileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveFileButton.Location = new System.Drawing.Point(12, 463);
+            this.saveFileButton.Name = "saveFileButton";
+            this.saveFileButton.Size = new System.Drawing.Size(185, 34);
+            this.saveFileButton.TabIndex = 6;
+            this.saveFileButton.Text = "Save File";
+            this.saveFileButton.UseVisualStyleBackColor = true;
+            this.saveFileButton.Click += new System.EventHandler(this.SaveFile);
             // 
             // gap
             // 
@@ -91,169 +120,138 @@
             this.gap.ScrollAlwaysVisible = true;
             this.gap.Size = new System.Drawing.Size(585, 524);
             this.gap.TabIndex = 7;
-            this.gap.SelectedIndexChanged += new System.EventHandler(this.gap_SelectedIndexChanged);
+            this.gap.SelectedIndexChanged += new System.EventHandler(this.curEditGapPositionInListUpdate);
             // 
-            // gap_pos_value
+            // curEditGapPositionInListValueText
             // 
-            this.gap_pos_value.Location = new System.Drawing.Point(47, 101);
-            this.gap_pos_value.Maximum = new decimal(new int[] {
+            this.curEditGapPositionInListValueText.Location = new System.Drawing.Point(47, 101);
+            this.curEditGapPositionInListValueText.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.gap_pos_value.Minimum = new decimal(new int[] {
+            this.curEditGapPositionInListValueText.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.gap_pos_value.Name = "gap_pos_value";
-            this.gap_pos_value.Size = new System.Drawing.Size(120, 20);
-            this.gap_pos_value.TabIndex = 8;
-            this.gap_pos_value.Value = new decimal(new int[] {
+            this.curEditGapPositionInListValueText.Name = "curEditGapPositionInListValueText";
+            this.curEditGapPositionInListValueText.Size = new System.Drawing.Size(120, 20);
+            this.curEditGapPositionInListValueText.TabIndex = 8;
+            this.curEditGapPositionInListValueText.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // label_gap_pos
+            // curEditGapScoreValueText
             // 
-            this.label_gap_pos.AutoSize = true;
-            this.label_gap_pos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_gap_pos.Location = new System.Drawing.Point(46, 82);
-            this.label_gap_pos.Name = "label_gap_pos";
-            this.label_gap_pos.Size = new System.Drawing.Size(121, 16);
-            this.label_gap_pos.TabIndex = 9;
-            this.label_gap_pos.Text = "Gap Position In List";
-            // 
-            // label_gap_score
-            // 
-            this.label_gap_score.AutoSize = true;
-            this.label_gap_score.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_gap_score.Location = new System.Drawing.Point(46, 137);
-            this.label_gap_score.Name = "label_gap_score";
-            this.label_gap_score.Size = new System.Drawing.Size(114, 16);
-            this.label_gap_score.TabIndex = 10;
-            this.label_gap_score.Text = "Gap Score Value ";
-            // 
-            // gap_sv
-            // 
-            this.gap_sv.Location = new System.Drawing.Point(47, 156);
-            this.gap_sv.Maximum = new decimal(new int[] {
+            this.curEditGapScoreValueText.Location = new System.Drawing.Point(47, 156);
+            this.curEditGapScoreValueText.Maximum = new decimal(new int[] {
             32767,
             0,
             0,
             0});
-            this.gap_sv.Name = "gap_sv";
-            this.gap_sv.Size = new System.Drawing.Size(120, 20);
-            this.gap_sv.TabIndex = 11;
+            this.curEditGapScoreValueText.Name = "curEditGapScoreValueText";
+            this.curEditGapScoreValueText.Size = new System.Drawing.Size(120, 20);
+            this.curEditGapScoreValueText.TabIndex = 11;
             // 
-            // label_gap_name
+            // curEditGapNameValueText
             // 
-            this.label_gap_name.AutoSize = true;
-            this.label_gap_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_gap_name.Location = new System.Drawing.Point(46, 191);
-            this.label_gap_name.Name = "label_gap_name";
-            this.label_gap_name.Size = new System.Drawing.Size(74, 16);
-            this.label_gap_name.TabIndex = 12;
-            this.label_gap_name.Text = "Gap Name";
+            this.curEditGapNameValueText.Location = new System.Drawing.Point(49, 210);
+            this.curEditGapNameValueText.Name = "curEditGapNameValueText";
+            this.curEditGapNameValueText.Size = new System.Drawing.Size(118, 20);
+            this.curEditGapNameValueText.TabIndex = 13;
             // 
-            // gap_name
+            // updateGapButton
             // 
-            this.gap_name.Location = new System.Drawing.Point(49, 210);
-            this.gap_name.Name = "gap_name";
-            this.gap_name.Size = new System.Drawing.Size(118, 20);
-            this.gap_name.TabIndex = 13;
+            this.updateGapButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateGapButton.Location = new System.Drawing.Point(12, 298);
+            this.updateGapButton.Name = "updateGapButton";
+            this.updateGapButton.Size = new System.Drawing.Size(185, 34);
+            this.updateGapButton.TabIndex = 14;
+            this.updateGapButton.Text = "Update Gap";
+            this.updateGapButton.UseVisualStyleBackColor = true;
+            this.updateGapButton.Click += new System.EventHandler(this.UpdateGap);
             // 
-            // update_gap
+            // removeGapButton
             // 
-            this.update_gap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update_gap.Location = new System.Drawing.Point(12, 258);
-            this.update_gap.Name = "update_gap";
-            this.update_gap.Size = new System.Drawing.Size(185, 34);
-            this.update_gap.TabIndex = 14;
-            this.update_gap.Text = "Update Gap";
-            this.update_gap.UseVisualStyleBackColor = true;
-            this.update_gap.Click += new System.EventHandler(this.update_gap_Click);
+            this.removeGapButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeGapButton.Location = new System.Drawing.Point(12, 338);
+            this.removeGapButton.Name = "removeGapButton";
+            this.removeGapButton.Size = new System.Drawing.Size(185, 34);
+            this.removeGapButton.TabIndex = 15;
+            this.removeGapButton.Text = "Remove Gap";
+            this.removeGapButton.UseVisualStyleBackColor = true;
+            this.removeGapButton.Click += new System.EventHandler(this.RemoveGap);
             // 
-            // remove_gap
+            // addGapButton
             // 
-            this.remove_gap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remove_gap.Location = new System.Drawing.Point(12, 298);
-            this.remove_gap.Name = "remove_gap";
-            this.remove_gap.Size = new System.Drawing.Size(185, 34);
-            this.remove_gap.TabIndex = 15;
-            this.remove_gap.Text = "Remove Gap";
-            this.remove_gap.UseVisualStyleBackColor = true;
-            this.remove_gap.Click += new System.EventHandler(this.remove_gap_Click);
+            this.addGapButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addGapButton.Location = new System.Drawing.Point(12, 258);
+            this.addGapButton.Name = "addGapButton";
+            this.addGapButton.Size = new System.Drawing.Size(185, 34);
+            this.addGapButton.TabIndex = 16;
+            this.addGapButton.Text = "Add Gap";
+            this.addGapButton.UseVisualStyleBackColor = true;
+            this.addGapButton.Click += new System.EventHandler(this.AddGap);
             // 
-            // add_gap
+            // clearAllGapsButton
             // 
-            this.add_gap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_gap.Location = new System.Drawing.Point(12, 338);
-            this.add_gap.Name = "add_gap";
-            this.add_gap.Size = new System.Drawing.Size(185, 34);
-            this.add_gap.TabIndex = 16;
-            this.add_gap.Text = "Add Gap";
-            this.add_gap.UseVisualStyleBackColor = true;
-            this.add_gap.Click += new System.EventHandler(this.add_gap_Click);
+            this.clearAllGapsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearAllGapsButton.Location = new System.Drawing.Point(12, 402);
+            this.clearAllGapsButton.Name = "clearAllGapsButton";
+            this.clearAllGapsButton.Size = new System.Drawing.Size(185, 34);
+            this.clearAllGapsButton.TabIndex = 17;
+            this.clearAllGapsButton.Text = "Clear All Gaps";
+            this.clearAllGapsButton.UseVisualStyleBackColor = true;
+            this.clearAllGapsButton.Click += new System.EventHandler(this.ClearAllGaps);
             // 
-            // clear_all
+            // exportListToTextFileButton
             // 
-            this.clear_all.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clear_all.Location = new System.Drawing.Point(12, 378);
-            this.clear_all.Name = "clear_all";
-            this.clear_all.Size = new System.Drawing.Size(185, 34);
-            this.clear_all.TabIndex = 17;
-            this.clear_all.Text = "Clear All Gaps";
-            this.clear_all.UseVisualStyleBackColor = true;
-            this.clear_all.Click += new System.EventHandler(this.clear_all_Click);
+            this.exportListToTextFileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportListToTextFileButton.Location = new System.Drawing.Point(12, 503);
+            this.exportListToTextFileButton.Name = "exportListToTextFileButton";
+            this.exportListToTextFileButton.Size = new System.Drawing.Size(185, 34);
+            this.exportListToTextFileButton.TabIndex = 18;
+            this.exportListToTextFileButton.Text = "Export List To .txt File";
+            this.exportListToTextFileButton.UseVisualStyleBackColor = true;
+            this.exportListToTextFileButton.Click += new System.EventHandler(this.ExportListToTxtFile);
             // 
-            // export_to_text
+            // creatorText
             // 
-            this.export_to_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.export_to_text.Location = new System.Drawing.Point(12, 503);
-            this.export_to_text.Name = "export_to_text";
-            this.export_to_text.Size = new System.Drawing.Size(185, 34);
-            this.export_to_text.TabIndex = 18;
-            this.export_to_text.Text = "Export List To .txt File";
-            this.export_to_text.UseVisualStyleBackColor = true;
-            this.export_to_text.Click += new System.EventHandler(this.export_to_text_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(663, 542);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 13);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Tool Made By Iron Hawk";
+            this.creatorText.AutoSize = true;
+            this.creatorText.Location = new System.Drawing.Point(663, 542);
+            this.creatorText.Name = "creatorText";
+            this.creatorText.Size = new System.Drawing.Size(125, 13);
+            this.creatorText.TabIndex = 19;
+            this.creatorText.Text = "Tool Made By Iron Hawk";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 564);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.export_to_text);
-            this.Controls.Add(this.clear_all);
-            this.Controls.Add(this.add_gap);
-            this.Controls.Add(this.remove_gap);
-            this.Controls.Add(this.update_gap);
-            this.Controls.Add(this.gap_name);
-            this.Controls.Add(this.label_gap_name);
-            this.Controls.Add(this.gap_sv);
-            this.Controls.Add(this.label_gap_score);
-            this.Controls.Add(this.label_gap_pos);
-            this.Controls.Add(this.gap_pos_value);
+            this.Controls.Add(this.creatorText);
+            this.Controls.Add(this.exportListToTextFileButton);
+            this.Controls.Add(this.clearAllGapsButton);
+            this.Controls.Add(this.addGapButton);
+            this.Controls.Add(this.removeGapButton);
+            this.Controls.Add(this.updateGapButton);
+            this.Controls.Add(this.curEditGapNameValueText);
+            this.Controls.Add(this.curEditGapNameText);
+            this.Controls.Add(this.curEditGapScoreValueText);
+            this.Controls.Add(this.curEditGapScoreText);
+            this.Controls.Add(this.curEditGapPositionInListText);
+            this.Controls.Add(this.curEditGapPositionInListValueText);
             this.Controls.Add(this.gap);
-            this.Controls.Add(this.save_file_button);
-            this.Controls.Add(this.number_of_gaps);
-            this.Controls.Add(this.open_file_button);
+            this.Controls.Add(this.saveFileButton);
+            this.Controls.Add(this.numberOfGapsText);
+            this.Controls.Add(this.openAndReadFileButton);
             this.Name = "Form1";
             this.Text = "THAW Engine .gap Viewer/Editor";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gap_pos_value)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gap_sv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.curEditGapPositionInListValueText)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.curEditGapScoreValueText)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,23 +259,23 @@
 
         #endregion
 
-        private System.Windows.Forms.Button open_file_button;
-        private System.Windows.Forms.Label number_of_gaps;
-        private System.Windows.Forms.Button save_file_button;
+        private System.Windows.Forms.Button openAndReadFileButton;
+        private System.Windows.Forms.Button saveFileButton;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         public System.Windows.Forms.ListBox gap;
-        private System.Windows.Forms.NumericUpDown gap_pos_value;
-        private System.Windows.Forms.Label label_gap_pos;
-        private System.Windows.Forms.Label label_gap_score;
-        private System.Windows.Forms.NumericUpDown gap_sv;
-        private System.Windows.Forms.Label label_gap_name;
-        private System.Windows.Forms.TextBox gap_name;
-        private System.Windows.Forms.Button update_gap;
-        private System.Windows.Forms.Button remove_gap;
-        private System.Windows.Forms.Button add_gap;
-        private System.Windows.Forms.Button clear_all;
-        private System.Windows.Forms.Button export_to_text;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown curEditGapPositionInListValueText;
+        private System.Windows.Forms.NumericUpDown curEditGapScoreValueText;
+        private System.Windows.Forms.TextBox curEditGapNameValueText;
+        private System.Windows.Forms.Button updateGapButton;
+        private System.Windows.Forms.Button removeGapButton;
+        private System.Windows.Forms.Button addGapButton;
+        private System.Windows.Forms.Button clearAllGapsButton;
+        private System.Windows.Forms.Button exportListToTextFileButton;
+        private System.Windows.Forms.Label creatorText;
+        private System.Windows.Forms.Label numberOfGapsText;
+        private System.Windows.Forms.Label curEditGapPositionInListText;
+        private System.Windows.Forms.Label curEditGapScoreText;
+        private System.Windows.Forms.Label curEditGapNameText;
     }
 }
 
